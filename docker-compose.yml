@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+  golang-simple-cicd:
+    image: ahmdrifai/golang-simple-cicd:latest
+    container_name: golang-simple-cicd
+    ports:
+      - "7000:7000"
+    restart: always
