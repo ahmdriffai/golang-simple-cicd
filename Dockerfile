@@ -5,7 +5,7 @@ FROM golang:1.23-alpine AS builder
 WORKDIR /app
 
 # Copy go.mod dan go.sum (jika ada)
-COPY go.mod go.sum ./
+COPY go.mod ./
 
 # Download dependencies (cache layer ini untuk efisiensi build)
 RUN go mod download
